@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PackageActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingVertical="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Περιγραφή"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/package_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Προσοχή κατά τη μεταφορά"
+                android:textColor="@color/black"
+                android:textSize="26sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_name"
+        android:paddingVertical="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Τηλέφωνο"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/package_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30€"
+                android:textColor="@color/black"
+                android:textSize="26sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="263dp"
+            android:layout_marginEnd="60dp"
+            android:text="Καλέστε"
+            android:onClick='call'/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_house_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_phone"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingVertical="10dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Διεύθυνση"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/package_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Σωρού 73"
+                android:textColor="@color/black"
+                android:textSize="26sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_phone"
+        android:layout_marginTop="74dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingVertical="10dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Κατάσταση"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/package_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Εκκρεμεί"
+                android:textColor="@color/black"
+                android:textSize="26sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_phone"
+        android:layout_marginTop="148dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingVertical="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Βάρος"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/package_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20kg"
+                android:textColor="@color/black"
+                android:textSize="26sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_fragile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_phone"
+        android:layout_marginTop="223dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingVertical="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Εύθραυστο"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/package_fragile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ναι"
+                android:textColor="@color/black"
+                android:textSize="26sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
